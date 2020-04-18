@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <title>Bootstrap homework</title>
+    <style>
+        .map-container-2{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        margin: 10 px;
+        }
+        .map-container-2 iframe{
+        left:0;
+        top:0;
+        height:80%;
+        width:80%;
+        position:absolute;
+        margin: 10 px;
+        }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+    <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bedaee;">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://png.cmtt.space/paper-media/81/a3/bd/a8cf05ef37671c.png" width="30" height="30" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html?cols=5&rows=5">Table</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Info
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tasks.html">Tasks</a>
+                <a class="dropdown-item" href="map.html">Map</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://github.com/igoreshaa1/itmo">GitHub profile</a>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+</nav>
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="container-fluid" style="margin-top: 25px; margin-bottom: 100px">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64086.7784369371!2d29.013235971494804!3d59.87053104213827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46968a4c7cbe4cdb%3A0x41de63ddb2b30bd7!2z0KHQvtGB0L3QvtCy0YvQuSDQkdC-0YAsINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1587223624813!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="margin-top: 25px; margin-bottom: 100px">
+            <div class="card-body"><!-- Начало текстового контента -->
+              <h4 class="card-title">Город Сосновый Бор</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Ленинградская область, Россия</h6>
+              <p class="card-text">Город Сосновый Бор расположен в живописном месте среди дюн и сосен на берегу Финского залива. В нём дышится легко, ощущается чистый и свежий воздух с привкусом хвои. Плюс, удивительная умиротворенность, тишина и прекрасные виды делают пребывание в этой местности неповторимым. <br>
+                Сосновый Бор находится в 98 километрах от Санкт-Петербурга, на берегу Копорской губы Финского залива. <br>
+                Утопающий в зелени с великолепными пляжами и развитой инфраструктурой, Сосновый Бор является центром притяжения для многих туристов, которые ценят экологический отдых превыше всего.
+            </p>
+              <a href="http://www.sbor.ru/" class="card-link">Сайт города</a>
+              <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9_%D0%91%D0%BE%D1%80_(%D0%B3%D0%BE%D1%80%D0%BE%D0%B4)" class="card-link">Читать в Wikipedia</a>
+            </div><!-- Конец текстового контента -->
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Футер -->
+<div class="container">
+  
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light text-center justify-content-center" style="background-color:  #bedaee;">
+        <p class="text-center" style="align-content: center">Старун Игорь, N3456<br>Университет ИТМО, 2020</p>
+     </nav>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+ 
+</html>

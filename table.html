@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <title>Bootstrap homework</title>
+    <style>
+
+        .mainTable  {
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 100px;
+            justify-content: center;
+            align-content: center;
+            border-color:rgb(45, 103, 230);
+            
+        }
+
+        .tableCaption {
+            margin-top: 40px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+        .divContainer {
+            background-color: rgb(245, 201, 201);
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            padding: 15px 0 7px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .funcBlock {
+            position: absolute;
+            padding: 10px 0 10px 0;
+            margin-top: 100 px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .function {
+            min-width: 160px;
+            height: 75px;
+            border-right: 1px solid rgb(221, 218, 218);
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .function input {
+            width: 150px;
+            display: block;
+        }
+
+        .function button, select {
+            width: 100%;
+            display: block;
+        }
+
+        #selectBorder {
+            width: 300px;
+            position:relative;
+            margin-top: 0px;
+            margin: 5px
+
+        }
+
+        p {
+            margin: 0;
+            font-size: 12px;
+            text-align: center;
+        }
+  
+        .mainTable {
+        border-collapse: collapse;
+        counter-reset: schetchik;   
+        }
+
+        .mainTable tr {
+        counter-increment: schetchik;  /* при встрече тега tr счётчик с названием "schetchik" увеличивается на единицу */ 
+        }
+
+        .mainTable td,
+        .mainTable tr:before {
+        padding: .1em .5em;
+        border: 1px solid #E7D5C0;
+        }
+
+        .mainTable tr:before {
+        content: counter(schetchik);  /* значение счётчика с названием "schetchik" записывается в первую клетку строки */ 
+        display: table-cell;
+        vertical-align: middle;
+        color: #978777;
+        }
+
+    
+
+    </style>
+  </head>
+  <body>
+    
+    <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bedaee;">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://png.cmtt.space/paper-media/81/a3/bd/a8cf05ef37671c.png" width="30" height="30" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html?cols=5&rows=5">Table</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Info
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tasks.html">Tasks</a>
+                <a class="dropdown-item" href="map.html">Map</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://github.com/igoreshaa1/itmo">GitHub profile</a>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+</nav>
+
+<!-- Карточка с навигацией (в заголовке) -->
+<div class="card">
+    <!-- Шапка с навигацией -->
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#item1">Добавление заголовка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#item2">Удаление строки</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#item3">Удаление столбца</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#item4">Удаление таблицы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#item5">Случайный выбор</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#item6">Оформление границ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#item7">Добавление строк/столбцов</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Текстовый контент -->
+    <div class="card-body tab-content">
+        <div class="tab-pane fade show active" id="item1">
+            Введите желаемый заголовок для таблицы
+            <input type="text" id="inputCaptionName"></input>
+            <button type="submit" id="addCaptionBut" class="btn btn-primary">Добавить заголовок</button>
+        </div>
+        <div class="tab-pane fade" id="item2">
+            Введите номер строки для удаления
+            <input type="number" min="1" max="30" id="rowForDelete"></input>
+            <button type="submit" id="deleteRowBut" class="btn btn-primary">Удалить строку</button>
+        </div>
+        <div class="tab-pane fade" id="item3">
+            Введите номер столбца для удаления
+            <input type="number" min="1" max="20" id="colForDelete"></input>
+            <button type="submit" id="deleteColBut" class="btn btn-primary">Удалить столбец</button>
+        </div>
+        <div class="tab-pane fade" id="item4">
+            Нажмите на кнопку, чтобы удалить таблицу
+            <button type="submit" id="deleteTableBut" class="btn btn-primary">Удалить таблицу</button>
+        </div>
+        <div class="tab-pane fade" id="item5">
+            Хотите немного магии? Нажмите на кнопку!
+            <button type="submit" id="magicBut" class="btn btn-primary">Магия</button>
+        </div>
+        <div class="tab-pane fade" id="item6">
+            <select name="selectBorder" id="selectBorder">123</select>
+            <input type="number" min="1" max="40" id="inputBorderWidth" style="position:relative; margin: 5px"></input>
+            <button type="submit" id="changeBorderBut" class="btn btn-primary">Применить</button>
+        </div>
+        <div class="tab-pane fade" id="item7">
+            Для добавления столбца или строки используйте кнопки справа
+            <button type="submit" id="addCol" class="btn btn-primary" style="position:relative; margin-left: 5px">Добавить столбец</button>
+            <button type="submit" id="addRow" class="btn btn-primary" style="position:relative; margin-left: 5px">Добавить строку</button>
+        </div>
+    </div>
+</div><!-- Конец карточки -->
+
+<h3 style="visibility: hidden;" id="tableHeader">Заголовок</h3>
+<script type="text/javascript" src="table.js"></script>
+
+<!-- Футер -->
+<div class="container">
+  
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light text-center justify-content-center" style="background-color:  #bedaee;">
+        <p class="text-center" style="align-content: center">Старун Игорь, N3456<br>Университет ИТМО, 2020</p>
+     </nav>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+ 
+</html>
