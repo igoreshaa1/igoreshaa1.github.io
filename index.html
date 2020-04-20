@@ -49,28 +49,27 @@
         </div>
 </nav>
 
-    <main role="main" class="container" style="padding: 2.3rem 1.5rem; text-align: center;">
-
+<main role="main" class="flex-shrink-0 text-center" style="padding: 2.3rem 1.5rem; align-items: center">
+      <div class="container mt-sm-5 mt-3" style="max-width: 800px; margin-left: auto; margin-right: auto">
       <div class="starter-template">
         <h2>Выберите размеры для вашей таблицы</h2>
         <p class="lead">Укажите количество столбцов и строк ниже<br> Чтобы создать таблицу, нажмите на кнопку "Создать таблицу"</p>
       </div>
 
-    </main>
-
     <form style="padding: 0rem 1.5rem; text-align: center;" action="table.html" method="get">
       <div class="form-group">
         <label for="colsNumber">Количество столбцов</label>
-        <input type="number" name="cols" min = 1 class="form-control" id="colsNumber" aria-describedby="emailHelp" placeholder="Число от 1 до 20" style="text-align: center; width: 300px; margin-left: 500px;">
+        <input type="number" name="cols" min = 1 class="form-control" id="colsNumber" aria-describedby="emailHelp" placeholder="Число от 1 до 20" style="text-align: center; width: 30%; margin: auto">
       </div>
       <div class="form-group">
         <label for="rowsNumber" >Количество строк</label>
-        <input type="number" name="rows" min = 1 class="form-control" id="rowsNumber" placeholder="Число от 1 до 20" style="text-align: center; width: 300px; margin-left: 500px">
+        <input type="number" name="rows" min = 1 class="form-control" id="rowsNumber" placeholder="Число от 1 до 20" style="text-align: center; width: 30%; margin: auto">
       </div>
       
       <button type="submit" id="goTable" class="btn btn-primary">Создать таблицу</button>
     </form>
-
+    </div>
+</main>
 
 <!-- Футер -->
 <div class="container">
